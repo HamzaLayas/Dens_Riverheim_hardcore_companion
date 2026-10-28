@@ -1,6 +1,6 @@
 # Den’s Riverheim Hardcore Companion
 
-A Valheim companion mod by **SterbenDen** for **Riverheim 1.2.1** and **Valheim 1.0.20**.
+A Valheim companion mod by **SterbenDen** for **Riverheim 1.2.1**. Version 0.1.4 removes the exact game-version restriction, allowing use on Valheim 1.0.21.
 
 Keep the terrain around the center of a new world faithful to its vanilla seed while Riverheim shapes the land farther out. The default vanilla core extends at least 1,350 metres from the center, with a gently varying edge and a 300-metre transition into Riverheim terrain. Protected areas preserve vanilla biomes, locations, and vegetation.
 
