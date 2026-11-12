@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 - Existing worlds listed as Riverheim Hybrid
+
+* Hybrid worlds created before 1.0.0 were listed as plain **Riverheim** in Worldhalla's world list, although they still generated with their vanilla core. When loaded, they are now listed as **Riverheim Hybrid**, and their saved settings move from `BepInEx/config/RiverheimHybrid/worlds/` into the world on its next save. Their terrain, biomes, and locations are unchanged.
+* Once moved, these worlds get the same protection as new ones: Worldhalla refuses to load them without the companion and refuses players without the matching version.
+* Plain Riverheim worlds stay plain. Update the companion on the server and every client.
+
 ## 1.0.0 - Riverheim Hybrid world generator
 
 Update the companion on the server and every client. Requires Riverheim 1.3.1 and Worldhalla 1.0.0, as since 0.2.1.
