@@ -1,39 +1,32 @@
 # Changelog
 
-## 1.0.2 - Published on Hexium
+## 1.0.2 - Now on Hexium
 
-* The same mod as 1.0.1, built reproducibly so that the identical release can be published on Hexium as well as GitHub. There are no gameplay or world-generation changes.
-* Includes everything from 1.0.1: hybrid worlds created before 1.0.0 are listed as **Riverheim Hybrid** and their settings move into the world on its next save. Update the companion on the server and every client.
+* Now available on Hexium as well as GitHub.
+* Includes the 1.0.1 fix: worlds you made with a vanilla core before 1.0.0 show up as **Riverheim Hybrid** again.
+* Install the same version on the server and every client.
 
-## 1.0.1 - Existing worlds listed as Riverheim Hybrid
+## 1.0.1 - Older worlds show as Riverheim Hybrid
 
-* Hybrid worlds created before 1.0.0 were listed as plain **Riverheim** in Worldhalla's world list, although they still generated with their vanilla core. When loaded, they are now listed as **Riverheim Hybrid**, and their saved settings move from `BepInEx/config/RiverheimHybrid/worlds/` into the world on its next save. Their terrain, biomes, and locations are unchanged.
-* Once moved, these worlds get the same protection as new ones: Worldhalla refuses to load them without the companion and refuses players without the matching version.
-* Plain Riverheim worlds stay plain. Update the companion on the server and every client.
+* Worlds you made with a vanilla core before 1.0.0 were shown as plain **Riverheim** in the world list. They still had their vanilla core, only the label was wrong. They now show as **Riverheim Hybrid**.
+* Load and save each of those worlds once. After that the world remembers its own settings, so keep `BepInEx/config/RiverheimHybrid/worlds/` until you have done that.
+* Nothing about the terrain changes.
 
-## 1.0.0 - Riverheim Hybrid world generator
+## 1.0.0 - Riverheim Hybrid in the world list
 
-Update the companion on the server and every client. Requires Riverheim 1.3.1 and Worldhalla 1.0.0, as since 0.2.1.
+* New **Riverheim Hybrid** option when creating a world. Pick it to get a vanilla core; picking **Riverheim** now gives you a plain Riverheim world.
+* All settings are in the world-creation window: Riverheim preset, Hybrid v2 or legacy, vanilla radius, edge shape, transition width, and which vanilla content to keep. New worlds use Hybrid v2.
+* The world preview shows the vanilla core.
+* Each world keeps its own settings, and players joining a server get them automatically. Players without the companion can't join a Riverheim Hybrid world.
+* Dedicated servers: start with `-wh guid sterbenden.riverheim.hybrid` to create a Riverheim Hybrid world.
+* Your existing worlds generate exactly as before.
 
-* Adds **Riverheim Hybrid** to Worldhalla's world-creation window. Choose it to create a Riverheim world with a vanilla core; plain Riverheim now creates plain Riverheim worlds.
-* Every setting can be chosen when creating the world: Riverheim preset, generation (Hybrid v2 or legacy), vanilla radius, edge variation and wavelength, biome offset, transition width, margins, and preservation options. New worlds default to Hybrid v2.
-* Worldhalla's preview shows the world with its vanilla core.
-* A world's settings are saved in the world and sent to players by Worldhalla, which refuses players without the matching companion. A Riverheim Hybrid world cannot be opened without the companion, so it can no longer be generated as plain Riverheim by mistake.
-* Dedicated servers create a Riverheim Hybrid world with `-wh guid sterbenden.riverheim.hybrid`, optionally with `-wh settings "..."`.
-* The companion's configuration now holds the defaults offered for new Riverheim Hybrid worlds, in a new section. Worlds created with earlier versions keep their saved settings and generate exactly as before.
+## 0.2.1 - Riverheim 1.3.1
 
-## 0.2.1 - Riverheim 1.3.1 and Worldhalla
-
-Requires **Riverheim 1.3.1** and **Worldhalla 1.0.0**. Update the companion, Riverheim, and Worldhalla together on the server and every client.
-
-* Supports Riverheim 1.3.1, which now runs as a Worldhalla world generator. The companion detects Riverheim worlds through Worldhalla and works with worlds created in Worldhalla's world-creation window or on a dedicated server started with `-wh guid dev.gurebu.riverheim`.
-* Existing worlds keep working: Worldhalla converts Riverheim 1.2.1 worlds on first load, and the companion keeps their saved settings and Hybrid v2 readiness records. Terrain, biomes, and locations generate exactly as with 0.1.4 and Riverheim 1.2.1.
-* Vanilla worlds and worlds made with other Worldhalla generators no longer receive a companion settings file.
-* Worldhalla's world preview is no longer affected by the companion's settings from a previously loaded world.
-* With an unsupported Riverheim or Worldhalla version, or without Worldhalla, the companion stays disabled and refuses to load worlds that use its vanilla core.
-* Outside the vanilla core, Worldhalla rounds Riverheim's forest density very slightly differently from Riverheim 1.2.1. This can at most shift an individual plant in areas that have not been explored yet; explored areas and the vanilla core are unaffected.
+* Works with **Riverheim 1.3.1**, which needs **Worldhalla 1.0.0**. Update the companion, Riverheim and Worldhalla together on the server and every client.
+* Your existing worlds keep working and generate exactly as before.
+* If Riverheim or Worldhalla is the wrong version, the companion won't load your vanilla-core worlds rather than letting them generate without it.
 * Works on Valheim 1.0.20 and 1.0.21.
-* This is the first public release of this update; version 0.2.0 was not published.
 
 ## 0.1.4 - Game update compatibility
 
