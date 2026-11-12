@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2 - Published on Hexium
+
+* The same mod as 1.0.1, built reproducibly so that the identical release can be published on Hexium as well as GitHub. There are no gameplay or world-generation changes.
+* Includes everything from 1.0.1: hybrid worlds created before 1.0.0 are listed as **Riverheim Hybrid** and their settings move into the world on its next save. Update the companion on the server and every client.
+
 ## 1.0.1 - Existing worlds listed as Riverheim Hybrid
 
 * Hybrid worlds created before 1.0.0 were listed as plain **Riverheim** in Worldhalla's world list, although they still generated with their vanilla core. When loaded, they are now listed as **Riverheim Hybrid**, and their saved settings move from `BepInEx/config/RiverheimHybrid/worlds/` into the world on its next save. Their terrain, biomes, and locations are unchanged.
