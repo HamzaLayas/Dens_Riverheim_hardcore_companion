@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.1 - Riverheim 1.3.1 and Worldhalla
+
+Requires **Riverheim 1.3.1** and **Worldhalla 1.0.0**. Update the companion, Riverheim, and Worldhalla together on the server and every client.
+
+* Supports Riverheim 1.3.1, which now runs as a Worldhalla world generator. The companion detects Riverheim worlds through Worldhalla and works with worlds created in Worldhalla's world-creation window or on a dedicated server started with `-wh guid dev.gurebu.riverheim`.
+* Existing worlds keep working: Worldhalla converts Riverheim 1.2.1 worlds on first load, and the companion keeps their saved settings and Hybrid v2 readiness records. Terrain, biomes, and locations generate exactly as with 0.1.4 and Riverheim 1.2.1.
+* Vanilla worlds and worlds made with other Worldhalla generators no longer receive a companion settings file.
+* Worldhalla's world preview is no longer affected by the companion's settings from a previously loaded world.
+* With an unsupported Riverheim or Worldhalla version, or without Worldhalla, the companion stays disabled and refuses to load worlds that use its vanilla core.
+* Outside the vanilla core, Worldhalla rounds Riverheim's forest density very slightly differently from Riverheim 1.2.1. This can at most shift an individual plant in areas that have not been explored yet; explored areas and the vanilla core are unaffected.
+* Works on Valheim 1.0.20 and 1.0.21.
+* This is the first public release of this update; version 0.2.0 was not published.
+
 ## 0.1.4 - Game update compatibility
 
 * Removed the exact Valheim 1.0.20 requirement that prevented Hybrid v2 worlds from loading on newer game versions, including 1.0.21.
