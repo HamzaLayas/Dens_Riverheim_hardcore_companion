@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.3 - Worldhalla 1.0.1
+
+* Works with **Worldhalla 1.0.1**. With 1.0.2, your Riverheim Hybrid worlds won't open once Worldhalla updates to 1.0.1, so update the companion and Worldhalla together on the server and every client.
+* Hosts that can't add command-line options can now create a Riverheim Hybrid world from Worldhalla's config. Set `Generator = sterbenden.riverheim.hybrid` in the `[World creation]` section of `BepInEx/config/dev.gurebu.worldhalla.cfg`, and optionally `Settings`, for example `generation 2 radius 1350`.
+* On a PC, the same config makes **Riverheim Hybrid** the starting choice in the world-creation window.
+* Your worlds generate exactly as before.
+
 ## 1.0.2 - Now on Hexium
 
 * Now available on Hexium as well as GitHub.
